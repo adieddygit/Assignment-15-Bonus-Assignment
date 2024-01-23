@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset = "utf-8">
+<meta name = "keyword" content = "HTML 5, CSS 3, JavaScript">
+<meta name = "description" content = "Dynamic web development">
+<meta name = "author" content = "Emmanuel">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<title>Drag and Drop</title>
+<link rel = "stylesheet" type="text/css" href = "../CSS/riskfactors.css"/>
+<script type="text/javascript" src="../Scripts/riskfactors.js">
+    
+</script>
+</head>
+    <body>
+        <header>
+            <a href="../index.html">Logout</a>
+            <a href="personalinfo.html">Personal-Info.</a>
+            <a href="hepb_form.html">Hepatitis B Form</a>
+            <a href="cong_syphilis.html">Cong. Syphilis Form</a>
+            <a href="sti.html">Chlamydia-Gonorrhea Form</a>
+        </header>
+        <section>
+ 
+            <h1>Risk Factors Form</h1>
+            <h3>In the last 12 months, drag the options that apply</h3>
+            <div id="container1" ondrop="drop(event)" ondragover="allowDrop(event)">Options
+                <div id="dragitem1" draggable="true" ondragstart="drag(event)">Had sex with males</div>
+                <div id="dragitem2" draggable="true" ondragstart="drag(event)">Had sex with females</div>
+                <div id="dragitem3" draggable="true" ondragstart="drag(event)">Victim of sexual assault</div>
+                <div id="dragitem4" draggable="true" ondragstart="drag(event)">Homeless</div>
+                <div id="dragitem5" draggable="true" ondragstart="drag(event)">Incarcerated</div>
+                <div id="dragitem6" draggable="true" ondragstart="drag(event)">Possible exposure</div>
+                <div id="dragitem7" draggable="true" ondragstart="drag(event)">Routine screening</div>
+            </div>
+            <div id="container2" ondrop="drop(event)" ondragover="allowDrop(event)">Selected Options</div>
+         </section>
+     
+    </body>
+</html>

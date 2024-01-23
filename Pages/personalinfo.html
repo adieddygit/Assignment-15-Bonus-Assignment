@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../CSS/personalinfo.css">
+    <title>Register Page</title>
+</head>
+   
+<body>
+
+    <nav class="topnav">
+        <ul>
+         <li><a href="#">Home</a></li>
+
+         <li><a href="../index.html">Logout</a></li> 
+         <li style="float: left;"><a href="#">Register Here</a></li>
+        </ul> 
+    </nav>
+
+    <header>
+        <h1>CDC Personal Information Page</h1>
+    </header>
+    <h3>--Register Here--</h3>
+
+<section class="row">
+    <nav class="col-s-4">
+        <ul>
+
+            <li><a href="registration.html" target="_blank">Registration Form</a></li>
+            <li><a href="riskfactors.html">Risk Factor Information</a></li>
+            <li><a href="hepb_form.html">Hepatitis B Pregnant Women Reporting Form</a></li>
+            <li><a href="cong_syphilis.html">Congenital Syphilis Form</a></li>
+            <li><a href="sti.html">Chlamydia & Gonorrhea Case Reporting Form</a></li>
+           </ul> 
+    </nav>
+
+    <article class="col-s-8">
+       <div>
+        <form  method="post" action="Pages/registration.html" autocomplete="off">
+                <label for="firstname">
+                    First Name:</label>
+                <input id="firstname" name="firstname" type="text" required/>&nbsp &nbsp 
+                <label for="middlename">
+                    Middle Name:</label>
+                <input id="middlename" name="middlename" type="text" placeholder="optional"/>&nbsp &nbsp 
+                <label for="lastname">
+                    Last Name:</label>
+                <input id="lastname" name="lastname" type="text" required/><br><br>&nbsp &nbsp 
+                <label for="uniqueid">
+                    Unique ID:</label>
+                    <input type="CDC-***********" name="uniqueid" id="pass" maxlength="17" required inputmode="numeric" placeholder="CDC-1234567890-MM">&nbsp &nbsp 
+                <label for="sex">
+                    Sex:</label>
+                <input type="radio" name="sex" value="female" id="sex" required/>Female
+                <input type="radio" name="sex" value="male" id="sex" required/>Male
+                <input type="radio" name="sex" value="Intersex" id="sex"/>Intersex
+                <label for="sexactivity">&nbsp &nbsp &nbsp &nbsp
+                    Gender Identity:</label>
+                    <input type="checkbox" value="male" name="sexactivity"/>Male
+                    <input type="checkbox" value="female" name="sexactivity"/>Female
+                    <input type="checkbox" value="" name="sexactivity"/>Other &nbsp &nbsp &nbsp &nbsp
+                    <p><label for="sexorientation">Sexual Orientation :</label>
+                        <select id="sexualorientation" name="sexualorientation">
+                            <option selected disabled>[Select One]</option>
+                            <option value="heterosexual">Heterosexual</option>
+                            <option value="homosexual">Homosexual</option>
+                            <option value="bisexual">Bisexual</option>
+                            <option value="others">Others</option>   
+                        </select>&nbsp &nbsp &nbsp &nbsp
+                <label for="year">Year Of Birth: </label>
+                <input type="number" placeholder="YYYY" min="1950">&nbsp &nbsp &nbsp &nbsp
+                <input type="submit" value="Submit">
+        </form>
+    </div>
+    </article>
+    
+</section>
+    
+
+</body>
+</html>

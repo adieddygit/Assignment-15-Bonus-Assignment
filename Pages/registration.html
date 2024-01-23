@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../CSS/personalinfo.css">
+    <title>Register Page</title>
+</head>
+   
+<body>
+
+    <nav class="topnav">
+        <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="../index.html">Logout</a></li>
+         <li style="float: left;"><a href="#">Register Here</a></li> 
+        </ul> 
+    </nav>
+
+    <header>
+        <h1>CDC Standard Data Collection</h1>
+    </header>
+    <h3>--Register Here--</h3>
+
+<section class="row">
+    <nav class="col-s-3">
+        <ul>
+            <li><a href="personalinfo.html" target="_blank">Personal Information</a></li>
+            <li><a href="riskfactors.html">Risk Factor Information</a></li>
+            <li><a href="hepb_form.html">Hepatitis B Pregnant Women Reporting Form</a></li>
+            <li><a href="cong_syphilis.html">Congenital Syphilis Form</a></li>
+            <li><a href="sti.html">Chlamydia & Gonorrhea Case Reporting Form</a></li>
+           </ul> 
+        </nav>
+
+    <article class="col-s-9">
+       <div>
+        <form  method="post" action="localstorage.html" name="register" id=personalinfo onsubmit="return validateregister();" autocomplete="off">
+                <label for="firstname">
+                    First Name:</label>
+                <input id="firstname" name="firstname" type="text"/><span id="firstnameErr"></span>&nbsp &nbsp
+                <label for="middlename">
+                    Middle Name:</label>
+                <input id="middlename" name="middlename" type="text" placeholder="optional"/>&nbsp &nbsp 
+                <label for="lastname">
+                    Last Name:</label>
+                <input id="lastname" name="lastname" type="text"/><br><span id="lastnameErr"></span><br>&nbsp &nbsp 
+                <label for="uniqueid">
+                    Unique ID:</label>
+                    <input type="CDC-***********" name="uniqueid" id="uniqueid" maxlength="17" inputmode="numeric" placeholder="CDC-1234567890-MM"><span id="uniqueidErr"></span>&nbsp &nbsp
+                    
+                <label for="sex_1">
+                    Sex:</label><span id="sexErr"></span>
+                <label for="sex_1"><input type="radio" name="sex" id="sex_1"/>Female</label>
+                <label for="sex_2"><input type="radio" name="sex" id="sex_2"/>Male</label>
+                <label for="sex_3"><input type="radio" name="sex" id="sex_3"/>Intersex</label>
+
+                <label for="other">&nbsp &nbsp &nbsp &nbsp
+                    Gender Identity:</label><span id="giErr"></span>
+                    <label for="male"><input type="checkbox" value="male" name="gi" id="male"/>Male</label>
+                    <label for="female"><input type="checkbox" value="female" name="gi"id="female"/>Female</label>
+                    <label for="other"><input type="checkbox" value="other" name="gi" id="other"/>Other</label> &nbsp &nbsp &nbsp &nbsp
+                    <p><label for="sexorient">Sexual Orientation :</label>
+                        <select id="sexorient" name="sexorient">
+                            <option selected disabled>[Select One]</option>
+                            <option value="heterosexual">Heterosexual</option>
+                            <option value="homosexual">Homosexual</option>
+                            <option value="bisexual">Bisexual</option>
+                            <option value="others">Others</option>   
+                        </select><span id="sexorientErr"></span>&nbsp &nbsp &nbsp &nbsp
+                <label for="yob">Year Of Birth: </label>
+                <input type="number" placeholder="YYYY" min="1950" name="yob" id="yob"><span id="yobErr"></span>&nbsp &nbsp &nbsp &nbsp
+                <input type="submit" onclick="collectAndDisplayValues();" value ="Submit">
+        </form>
+    </div>
+    </article>
+    
+</section>
+<script src="../Scripts/validateregister.js"></script>
+<script src="../Scripts/localstorage.js"></script>
+
+</body>
+</html>

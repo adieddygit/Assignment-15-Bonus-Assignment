@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../CSS/chlamygono.css">
+    <title>Chlamydia Form</title>
+</head>
+   
+<body>
+    <nav class="topnav">
+        <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="../index.html">Logout</a></li>
+         <li style="float: left;"><a href="registration.html">Register Here</a></li> 
+        </ul> 
+    </nav>
+        <header>
+            <h1>CDC Standard Data Collection</h1>
+        </header>
+    
+   
+<section class="row">
+    <nav class="col-s-3">
+        <ul>
+            <li><a href="personalinfo.html">Personal Information</a></li>
+            <li><a href="riskfactors.html">Risk Factor Information</a></li>
+            <li><a href="hepb_form.html">Hepatitis B Pregnant Women Reporting Form</a></li>
+            <li><a href="cong_syphilis.html">Congenital Syphilis Reporting Form</a></li>
+            <li><a href="../index.html">Login Page</a></li>
+           </ul> 
+    </nav>
+
+    <article class="col-s-9">
+        
+        <form method="post" action="Pages/registration.html" autocomplete="off">
+            <table>
+
+                <caption style="font-weight: bold; text-transform: uppercase;">STI Case Reporting Form for Chlamydia and Gonorrhea</caption>
+                <thead>
+                    <tr>
+                        <td colspan="6" style="text-align: left;" ><strong>County Department of Health and Human Services</strong><br>
+                            Return completed form to Washington County Public Health Disease Control and Prevention
+                            FAX: 503-846-3644<br>Call with questions: 503-846-2972</td>
+
+                        
+                    </tr>
+            
+                    <tr>
+                        <th style= "background-color: #006600; color: #ffffff;" colspan="6">Clinic Information</th>
+                        
+                    </tr>
+
+                <tbody>
+
+                    <tr>
+                     
+                        <td colspan="4">
+                        <label for="date">Date:</label>&nbsp
+                        <input type="date" id="date" name="date" required/></td>
+                        <td colspan="2">
+                        <label for="person">Person Completing Form:</label>&nbsp
+                        <input type="string" class="input"></td>
+                        
+                    </tr>
+
+                    <tr>
+                
+                        <td colspan="4">
+                           <label for="provider">Health Provider:</label>&nbsp
+                           <input type="string" class="input"></td>
+                        <td colspan="2">
+                           <label for="contact">Contact phone number/fax:</label>&nbsp
+                           <input type="string" class="input"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="text-align: left;">
+                                Your lab reported a communicable disease on the patient shown below and listed you as the provider. The Oregon Department of Human Services and Washington
+                                County require additional information. The fax cover sheet you have received references Oregon Law (ORS 433) that requires you to report this information.<br>                                                                                                                                                                                                                                                   
+                                <strong>Please complete the form <u>within 24 hours,</u> or by the end of the next working day, and fax it back to our office at 503-846-3644.</strong> If you
+                                prefer you may call to report the required information. We appreciate your cooperation and prompt handling of this confidential report.
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="6" style="background-color: #006600; color: #ffffff;">Patient Information-Please complete all information requested below </th>
+                    </tr>
+
+                    <tr>
+
+                        <th style="width: 40px;" colspan="0.5" >1.</th>
+                        <th style="font-size: small; text-align: left;"  colspan="3">
+                            <label for="provider">NAME:</label>&nbsp &nbsp
+                            <input type="string" class="input">
+                        </th>
+
+                        <th style="font-size: small;text-align: left"  colspan="1">&nbsp &nbsp
+                            <label for="provider">DATE OF BIRTH:</label>
+                            <input type="date" id="date" name="date" required/>
+                        </th>
+
+                        <th style="font-size: small;text-align: left"  colspan="1.5">
+                            <label for="provider">GENDER:</label>&nbsp &nbsp
+                            <input type="string" class="input">
+                        </th>
+                    
+                    </tr>
+
+                    <tr>
+                        <th style="width: 40px;" colspan="0.5" >2.</th>
+                        <th style="font-size: small;text-align: left;"  colspan="5.5">
+                        <label for="address">2.&nbsp&nbsp HOME ADDRESS: </label>
+                        <input type="string" class="input" placeholder="street">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="string" class="input" placeholder="city/state">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="string" class="input" placeholder="zip"><br><br>
+                        <label for="phone">PHONE NUMBER:</label>&nbsp    
+                        <input type="string" class="input">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                         <label for="phone">ALTERNATIVE#:</label>&nbsp  
+                        <input type="string" class="input">
+                    
+                    </th>
+                    </tr>
+                        
+
+                    <tr>
+                        <th style="width: 40px;" colspan="0.5" >3.</th>
+                        <th style="font-size: small;text-align: left;" colspan="5.5"><label for="result">PREGNANCT TEST RESULTS:</label>
+                            <input type="radio" name="result" value="result" id="result"/>N/A
+                            <input type="radio" name="result" value="result" id="result"/>Negative
+                            <input type="radio" name="result" value="result" id="result"/>Unknown
+                            <input type="radio" name="result" value="result" id="result"/>Positive: If positive how many weeks? <input type="string" class="input">
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th style="width: 40px;" colspan="0.5" >4.</th>
+                        <th style="font-size: small; text-align: left" colspan="1"><label for="ethinic">ETHNICITY:</label><br>
+                            <input type="radio" name="ethinic" value="ethinic" id="ethinic"/>Hispanic
+                            <input type="radio" name="ethinic" value="ethinic" id="ethinic"/>Non-Hispanic
+                            <input type="radio" name="ethinic" value="ethinic" id="ethinic"/>Unknown
+                        </th>
+                        <th style="font-size: small; text-align: left" colspan="3"><label for="race">RACE:</label><br>
+                            <input type="radio" name="race" value="race" id="race"/>White
+                            <input type="radio" name="race" value="race" id="race"/>Black
+                            <input type="radio" name="race" value="race" id="race"/>Asian
+                            <input type="radio" name="race" value="race" id="race"/>American Indian<br>
+                            <input type="radio" name="race" value="race" id="race"/>Alaskan
+                            <input type="radio" name="race" value="race" id="race"/>Pacific Islander
+                            <input type="radio" name="race" value="race" id="race"/>Unknown<br>
+                            <input type="radio" name="race" value="race" id="race"/>Other: <input type="string" class="input">
+                        </th>
+                        <th style="font-size: small; text-align: left" colspan="1.5"><label for="sex">GENDER OF SEX PARTNER(S):</label><br>
+                            <input type="radio" name="sex" value="male" id="sex"/>Male
+                            <input type="radio" name="sex" value="female" id="sex"/>Female<br>
+                            <input type="radio" name="sex" value="both" id="sex"/>Both
+                            <input type="radio" name="sex" value="unknown" id="sex"/>Unknown
+                            </th>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="width: 40px;" colspan="0.5" >5.</th>
+                        <th style="font-size: small;text-align: left;" rowspan="1">
+                            <label for="result">TEST RESULT TYPE:</label><br>
+                            <input type="radio" name="result" value="positive" id="result"/>Chlamydia Positive Result<br>
+                             Date: <input type="date" id="date" name="date" required/><br>
+                            <input type="radio" name="result" value="positive" id="result"/>Gonorrhea Positive Result<br>
+                            Date: <input type="date" id="date" name="date" required/>
+                        </th>
+                        <th style="font-size: small; text-align: left" colspan="4.5"><label for="test">PREVIOUS HIV TESTING:</label><br>   
+                            <input type="radio" name="test" value="yes" id="test"/>Yes
+                            <input type="radio" name="test" value="no" id="test"/>No
+                            <input type="radio" name="test" value="unknown" id="test"/>Unknown<br>If yes, last result was?
+                            <input type="radio" name="test" value="pos" id="test"/>POS
+                            <input type="radio" name="test" value="neg" id="test"/>NEG
+                            <input type="radio" name="test" value="unknown" id="test"/>Unknown<br>
+                            <label for="month">Month & Year of last test</label>
+                            <input id="month" name="month" type="month"/><br>
+                        </th>
+                    </tr>
+                        
+                    <tr>
+                        <th style="width: 40px;" colspan="0.5" >6.</th>
+                        <th style="font-size: small; text-align: left" colspan="1.5"><label for="exam">REASON FOR EXAM:</label><br>
+                            <input type="radio" name="exam" value="exam" id="exam"/>Symptomatic
+                            <input type="radio" name="exam" value="exam" id="exam"/>Routine Exam<br>
+                            <input type="radio" name="exam" value="exam" id="exam"/>Test for Cure
+                            <input type="radio" name="exam" value="exam" id="exam"/>Exposed to Infection
+                            <input type="radio" name="exam" value="exam" id="exam"/>Pregnant
+                        </th>
+
+                        <th style="font-size: small; text-align: left" colspan="2"><label for="diagnosis">DIAGNOSIS:</label><br>
+                            <input type="radio" name="diagnosis" value="diagnosis" id="diagnosis"/>Asymptomatic<br>
+                            <input type="radio" name="diagnosis" value="diagnosis" id="diagnosis"/>Symptomatic-Uncomplicated<br>
+                            <input type="radio" name="diagnosis" value="diagnosis" id="diagnosis"/>Pelvic Inflammatory Disease (PID)<br>
+                            <input type="radio" name="diagnosis" value="diagnosis" id="diagnosis"/>Ophthalmia /conjunctivitis
+                            <input type="radio" name="diagnosis" value="diagnosis" id="diagnosis"/>Disseminated
+                        </th>
+
+                        <th style="font-size: small; text-align: left" colspan="2"><label for="site">SITE(S):</label><br>
+                            <input type="radio" name="site" value="site" id="site"/>Cervix
+                            <input type="radio" name="site" value="site" id="site"/>Vaginal
+                            <input type="radio" name="site" value="site" id="site"/>Urethra
+                            <input type="radio" name="site" value="site" id="site"/>Rectum
+                            <input type="radio" name="site" value="site" id="site"/>Ocular<br>
+                            <input type="radio" name="site" value="site" id="site"/>Urine
+                            <input type="radio" name="site" value="site" id="site"/>Pharynx
+                            <input type="radio" name="site" value="site" id="site"/>Other
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th style="width: 40px;" rowspan="5" >7.</th>
+                        <th   colspan="3" style="background-color: #006600; color: #ffffff;">GONORRHEA TREATMENT PLAN:</th>
+                        <th   colspan="2.5" style="background-color: #006600; color: #ffffff;">CHLAMYDIA TREATMENT PLAN:</th>
+                    </tr>  
+                    <tr>
+
+                        <td  style="font-size: small; text-align: left" colspan="3"><label for="treatment"></label>
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Rocephin/Ceftriaxone 250mg IM x 1. &nbsp&nbsp&nbsp&nbsp
+                            Date: <input type="date" id="date" name="date" required/><br><br>PLUS<br><br>
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Azithromycin 1gm orally in a single dose.
+                        </td>
+                        <td style="font-size: small; text-align: left" colspan="3"><label for="treatment"></label><br>   
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Azithromycin 1gm orally in a single dose.&nbsp &nbsp&nbsp&nbsp&nbsp
+                            Date: <input type="date" id="date" name="date" required/><br><br>OR<br><br>
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Doxycycline 100mg BID x 7 days.&nbsp(contraindicated during pregnancy)<br> 
+                            Date: <input type="date" id="date" name="date" required/>
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <th colspan="3" style="background-color: #538a53; color: #ffffff;">Alternative Treatment Regimens</th>
+                        <th colspan="3" style="background-color: #538a53; color: #ffffff;">Alternative Treatment Regimens</th>
+                    </tr> 
+
+                    <tr>
+
+                        <td  style="font-size: small; text-align: left" colspan="3"><label for="treatment"></label>
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Cefixime 400mg orally in a single dose
+                            Date: <input type="date" id="date" name="date" required/><br><br>PLUS<br><br>
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Azithromycin 1 gm orally in a single dose.
+                            </td>
+                            <td style="font-size: small; text-align: left" colspan="3"><label for="treatment"></label><br>   
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Amoxicillin 500mg orally tid X 7 days.&nbsp 
+                            Date: <input type="date" id="date" name="date" required/><br><br><br><br><br><br>
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <th style="font-size: small; text-align: left" colspan="3"><label for="treatment"></label><br>
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Other Treatment:&nbsp&nbsp&nbsp&nbsp 
+                            Date: <input type="date" id="date" name="date" required/><br><br>
+                            <input type="string" class="input"><br>(test of cure recommended at 1 month)<br>
+                        </th>
+                        <th style="font-size: small; text-align: left" colspan="3"><label for="treatment"></label><br>   
+                            <input type="radio" name="treatment" value="treatment" id="treatment"/>Amoxicillin 500mg orally tid X 7 days.&nbsp&nbsp&nbsp&nbsp&nbsp 
+                            Date: <input type="date" id="date" name="date" required/><br><br>
+                            <input type="string" class="input"><br><br>
+                        </th> 
+                    </tr>
+
+                    <tr>
+                        <th style="width: 40px;" colspan="0.5" >8.</th>
+                        <th style="font-size: small; text-align: left" colspan="5.5">
+                            <label for="notice">IF NOT TREATED YET — PATIENT NOTIFIED OF INFECTION:</label>
+                            <input type="radio" name="notice" value="notice" id="notice"/>Yes
+                            <input type="radio" name="notice" value="notice" id="notice"/>No<br>
+                            <label form="assistance">Dose the provider need assistance in contacting a client that has not responded for treatment?</label>
+                            <input type="radio" name="assistance" value="assistance" id="assistance"/>Yes
+                            <input type="radio" name="assistance" value="assistance" id="assistance"/>No
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="6" style="background-color: #538a53; color: #ffffff; text-align: left;">9. &nbspPARTNER MANAGEMENT PLAN — Ensuring Partner Treatment</th>
+                    </tr> 
+
+                    <tr>
+                        <th colspan="6"  style="font-size: small;">
+                            <label for="parttherapy">Expedited Partner Therapy dispensed at time of visit?
+                            <input type="radio" name="parttherapy" value="parttherapy" id="parttherapy"/>No&nbsp&nbsp
+                            <input type="radio" name="parttherapy" value="parttherapy" id="parttherapy"/>Yes:<input type="string" class="input"><br><br>(See: OHA/STD Prevention for EPT guidelines and policy).
+                        </th>
+                    
+                    </tr> 
+
+                    <tr>
+                        <th colspan="6"  style="font-size: 14px;">When resources allow the health department will be contacting gonorrhea cases and high risk chlamydia cases to offer partner services.<br>Please notify patient that public health worker may be contacting them to offer partner services.<br>
+                            <input type="checkbox" name="resources" value="resources" id="resources"/>PROVIDER REQUESTS THAT CLIENT NOT BE CONTACTED BY PUBLIC HEALTH/PROVIDER WILL ASSURE PARTNER TREATMENT
+                        
+                        </th>   
+                    </tr> 
+
+                    <tr>
+                        <th colspan="6"  style="font-size: 14px;">CURRENT RECOMMENDED TREATMENT- See CDC Guidelines at: www.cdc.gov/std/treatment/</th>
+                    
+                    </tr>
+
+                    <tr>
+                        <th colspan="6"  style="font-size: small; text-align: left;">
+                            <label for="name">Mother's Name:</label>
+                            <input id="name" name="name" type="name" required/>&nbsp &nbsp&nbsp&nbsp&nbsp
+                            <label for="chartno">Chart No:</label>
+                            <input id="chartno" name="chartno" type="text" required/>&nbsp &nbsp&nbsp&nbsp&nbsp
+                            <label for="number">Mother's Case ID No:</label>
+                            <input id="number" name="number" type="text" required/><br><br>
+                            <label for="address">Address (Number, Street, City, State): </label>
+                            <input type="string" class="input">&nbsp &nbsp&nbsp&nbsp&nbsp
+                            <label for="zipcode">(Zip code):</label>
+                            <input type="string" class="input">&nbsp &nbsp&nbsp&nbsp&nbsp<br><br>
+                            OB/Gyn:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
+                            <label for="tel">Telephone Number: </label>
+                            <input id="tel" name="tel" type="tel" placeholder="(123)123-12341234"><br><br>
+                            <label for="name">Infant's Name:</label>
+                            <input id="name" name="name" type="name" required/>&nbsp &nbsp&nbsp&nbsp&nbsp
+                            <label for="chartno">Chart No:</label>
+                            <input id="chartno" name="chartno" type="text" required/>&nbsp &nbsp&nbsp&nbsp&nbsp<br><br>
+                            <label for="name">Delivering Physician:</label>
+                            <input type="name" id="name" name="name" required/>&nbsp &nbsp&nbsp&nbsp&nbsp
+                            <label for="tel">Telephone Number:</label>
+                            <input id="tel" name="tel" type="tel" placeholder="(123)123-12341234"><br><br>
+                            <label for="name">Pediatrician:</label>
+                            <input type="name" id="name" name="name" required/>&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label for="tel">Phone No:</label>
+                            <input id="tel" name="tel" type="tel" placeholder="(123)123-12341234">&nbsp &nbsp&nbsp&nbsp&nbsp
+                            <label for="name">Delivering Hospital:</label>
+                            <input type="name" id="name" name="name" required/>
+                            <p style="text-align: center;">– Patient identifier information is not transmitted to CDC –</p><br>
+                            <p style="text-align: center;"><input type="submit" value="Submit"></p>  
+
+                        </th>
+
+                    </tr>
+                
+                </tbody>
+
+                </table>
+        
+                            <p id="p1">Other geographic unit: <input type="string" class="input">&nbsp&nbsp</p>
+            </form>
+      
+
+        </article>
+    
+    </section>
+                        
+</body>
+
+</html>

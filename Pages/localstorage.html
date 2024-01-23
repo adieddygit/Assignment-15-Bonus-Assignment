@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../CSS/personalinfo.css">
+    <title> Page</title>
+</head>
+   
+<body>
+        <h2>Registration Form</h2>
+        <p id='displayValues'></p>
+        <script>
+            function collectAndDisplayValues() {
+                let firstname = document.getElementById('firstname').value;
+                let middlename = document.getElementById('middlename').value;
+                let lastname = document.getElementById('lastname').value;
+                let uniqueid = document.getElementById('uniqueid').value;
+                let sex_1 = document.getElementById('sex_1').value;
+                let gi = document.getElementById('gi').value;
+                let sexorient_1 = document.getElementById('sexorient_1').value;
+                let yob = document.getElementById('yob').value;
+    
+                let valuesMap = {
+                    'First Name': firstname,
+                    'Middle Name': middlename,
+                    'Last Name': lastname,
+                    'Unique ID': uniqueid,
+                    'Sex': sex_1,
+                    'Gender Identity': gi,
+                    'Sexual Orientation': sexorient_1,
+                    'Year of Birth': yob
+                }
+            
+                let displayValues = document.getElementById('displayValues');
+                displayValues.innerHTML = '<h2>Entered Values:</h2>';
+    
+                for (let key in valuesMap) {
+                    displayValues.innerHTML += '<p><strong>' + key + ':</strong> ' + valuesMap[key] + '</p>';
+                }
+            }
+        </script>
+        
+    
+
+    </body>
+
+    </html>

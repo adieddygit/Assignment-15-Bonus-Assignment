@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="calculate.css">
+    <title>About Page</title>
+    
+</head>
+   
+<body>
+
+  <h1>Scientific Calculator</h1>
+ 
+<table class="calculator" >
+  <tr>
+    <td colspan="4"> <input class="display-box" type="text" id="result" /> </td>
+
+     <!-- clearScreen() function clears all the values -->
+    <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <!-- display() function displays the value of clicked button -->
+    <td> <input type="button" value="1" onclick="display('1')" /> </td>
+    <td> <input type="button" value="2" onclick="display('2')" /> </td>
+    <td> <input type="button" value="3" onclick="display('3')" /> </td>
+    <td> <input type="button" value="/" onclick="display('/')" id="op"/> </td>
+    <td> <input type="button" value="DEL" onclick="del()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onclick="display('4')" /> </td>
+    <td> <input type="button" value="5" onclick="display('5')" /> </td>
+    <td> <input type="button" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" value="-" onclick="display('-')" id="op"/> </td>
+    <td> <input type="button" value="^" onclick=" display('**')" id="op"> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onclick="display('7')" /> </td>
+    <td> <input type="button" value="8" onclick="display('8')" /> </td>
+    <td> <input type="button" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" value="+" onclick="display('+')" id="op"/> </td>
+    <td> <input type="button" value="√" onclick="squareRoot()" id="op"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" value="0" onclick="display('0')" /> </td>
+    <td> <input type="button" value="%" onclick=" display('%')" id="op"/> </td>
+    <td> <input type="button" value="*" onclick="display('*')" id="op"/> </td>
+   
+    <!-- calculate() function evaluates the mathematical expression -->
+   
+    <td> <input type="button" value="=" onclick="calculate()" id="calc" /> </td>
+   
+   
+    
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="calculate.js"></script>
+ 
+</body>
+ 
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Emmanuadi">
+        <meta name="keyword" content="HTML 5, CSS 3, JavaScript">
+        <meta name="description" content="dynamic web development">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" type="text/css" href="">
+        <style>
+            .topnav{
+                top: 0;
+                right: 0;
+                left: 0;
+                font-size: large;
+               
+            }
+
+            .topnav ul{
+                list-style-type: none;
+               
+            }
+
+            .topnav li{
+               display: inline;
+               margin: 30px;
+               float: right;
+               color: #006400; 
+               text-shadow: #000000 0.7px 0.7px 0.7px;
+
+            }
+
+            .topnav a{
+                text-decoration: none; 
+            }
+
+                li a:visited{
+                color: #006400;
+            }
+
+            li a:active{
+                color: red;
+            }
+
+
+            div{
+                position: relative;
+                top: 70px;
+                border: solid silver 1px;
+                height: 330px;
+                width: 350px;
+                margin: 5px;
+                padding: 10px;
+                text-align: center;
+                border-radius: 20px;
+                box-shadow: #006400 0.5px 0.5px 0.5px 0.5px;
+                text-shadow: #000000 1px 1px 1px;
+
+            }
+
+            #login{
+            width: 60px; 
+            height: 25px;
+            background-color: #006400;  
+            color: #ffffff;
+            text-shadow: #000000 2px 2px 2px; 
+            }
+
+            #formlogin{
+                margin: auto;
+                width: 320px;
+                text-shadow: #000000 0.5px 0.5px 0.5px;
+            }
+
+            footer{
+            position: relative;
+            top: 120px;
+            text-align: center;
+            padding-bottom: 2px;
+            padding-top: 1px;
+            text-shadow: #000000 0.5px 0.5px 0.5px;
+        }
+
+        footer a{
+            padding: 10px;
+        }
+
+        
+
+        </style>
+    </head>
+    <body>
+        <nav class="topnav">
+            <ul>
+                <li><a href="../index.html">Logout</a></li>
+                <li style="float: left;"><a href="#">About CDC</a></li>
+            </ul>
+        </nav>
+        
+        <div id="formlogin">
+            <form>
+                <h2>Forgot Password</h2>
+                <label for="email">Email or Phone Number</label><br>
+                <input style="height: 40px;" type="email" name="email" id="email" required autocomplete="off"><br><br>
+                <p>We'll send a verification code to this email or phone number
+                     if it matches an existing CDC account.
+                    </p>
+                    <button id="login" value="next" >Next</button><br><br>
+                    <a href="../index.html">Back</a>
+            </form>
+        </div>
+        <footer>
+            <a href="#">User Agreement</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Community Guidelines</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Copyright Policy</a>
+            <a href="#">Send Feedback</a>
+        </footer>
+    </body>
+</html>
