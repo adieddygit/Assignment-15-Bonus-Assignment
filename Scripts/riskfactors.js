@@ -23,7 +23,6 @@ and accepts only the format as an argument.
 
 function allowDrop(ev){
     ev.preventDefault();
-    ev.target.classlist.add("drag-over")
 }
 
 function drag(ev){
@@ -32,7 +31,6 @@ function drag(ev){
 
 function drop(ev){
     ev.preventDefault();
-    ev.target.classlist.remove("drag-over");
     const data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }

@@ -2,6 +2,7 @@ body{
     background-color: silver;
     text-shadow: #000000 1px 1px 1px;
 }
+
 header{
     height: 30px;
     width: auto;
@@ -57,10 +58,6 @@ h3{
     border-radius: 10px;
     text-shadow: #000000 1px 1px 1px;
     box-shadow: #000000  2px 2px 2px 2px;
-}
-
-#container1.drag-over{
-border-color: red;
 }
 
 #dragitem1, #dragitem2, #dragitem3, #dragitem4, #dragitem5, #dragitem6, #dragitem7{
