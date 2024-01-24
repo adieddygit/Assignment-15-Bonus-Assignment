@@ -15,13 +15,26 @@ function calculate() {
     document.getElementById("result").value = y;
 }
 
-function squareRoot(value) {
-    let display = document.getElementById("result");
-    display.value += value;
-    let sqrt = Math.sqrt(display)
-    document.getElementById('result').value = (value);
+function squareRoot() {
+// This fuction gets the value from the result input field
+    let inputValue = document.getElementById("result").value;
+
+// This function calculates the square root of the input value
+    let squareRootValue = Math.sqrt(parseFloat(inputValue));
+
+// This function displays the result in the result input field
+    document.getElementById("result").value = squareRootValue;
 }
 
 function del() {
-    document.getElementById("result").value = value.substring(0, -1);
+    let currentValue = document.getElementById("result").value;
+    
+// To check if there is anything to delete
+    if (currentValue.length > 0) {
+// To remove the last character
+        let newValue = currentValue.substring(0, currentValue.length - 1);
+        
+// To update the input field with the new value
+        document.getElementById("result").value = newValue;
+    }
 }

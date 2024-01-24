@@ -6,7 +6,7 @@
     height: 500px;
     width: 300px;
     margin: auto;
-    background-color: #191b28;
+    background-color: #000000;
 }
 
 .display-box {
@@ -16,11 +16,11 @@
     border: solid black 0.5px;
     color: black;
     border-radius: 5px;
-    width: 300px;
+    width: 290px;
     height: 60px;
 }
 
-#btn {
+.btn {
     background-color: #fb0066;
     width: 60px;
     height: 60px;
@@ -32,7 +32,7 @@
     height: 60px;
 }
 
-#op {
+.op {
     background-color: #daa520;
     width: 60px;
     height: 60px;
