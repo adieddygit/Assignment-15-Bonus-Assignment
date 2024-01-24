@@ -20,7 +20,7 @@ function squareRoot() {
     let inputValue = document.getElementById("result").value;
 
 // This function calculates the square root of the input value
-    let squareRootValue = Math.sqrt(parseFloat(inputValue));
+    let squareRootValue = Math.sqrt(inputValue);
 
 // This function displays the result in the result input field
     document.getElementById("result").value = squareRootValue;
