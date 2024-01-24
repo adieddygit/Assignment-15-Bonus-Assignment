@@ -20,7 +20,7 @@
     height: 60px;
 }
 
-.btn {
+#btn {
     background-color: #fb0066;
     width: 60px;
     height: 60px;
@@ -32,7 +32,7 @@
     height: 60px;
 }
 
-.op {
+#op {
     background-color: #daa520;
     width: 60px;
     height: 60px;

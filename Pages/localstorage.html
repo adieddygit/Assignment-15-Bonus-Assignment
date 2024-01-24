@@ -11,39 +11,38 @@
 </head>
    
 <body>
-        <h2>Registration Form</h2>
-        <p id='displayValues'></p>
-        <script>
-            function collectAndDisplayValues() {
-                let firstname = document.getElementById('firstname').value;
-                let middlename = document.getElementById('middlename').value;
-                let lastname = document.getElementById('lastname').value;
-                let uniqueid = document.getElementById('uniqueid').value;
-                let sex_1 = document.getElementById('sex_1').value;
-                let gi = document.getElementById('gi').value;
-                let sexorient_1 = document.getElementById('sexorient_1').value;
-                let yob = document.getElementById('yob').value;
-    
-                let valuesMap = {
-                    'First Name': firstname,
-                    'Middle Name': middlename,
-                    'Last Name': lastname,
-                    'Unique ID': uniqueid,
-                    'Sex': sex_1,
-                    'Gender Identity': gi,
-                    'Sexual Orientation': sexorient_1,
-                    'Year of Birth': yob
-                }
-            
-                let displayValues = document.getElementById('displayValues');
-                displayValues.innerHTML = '<h2>Entered Values:</h2>';
-    
-                for (let key in valuesMap) {
-                    displayValues.innerHTML += '<p><strong>' + key + ':</strong> ' + valuesMap[key] + '</p>';
-                }
-            }
-        </script>
         
+    <h2>Personal Information</h2>
+    <div id="displayValues"></div>
+
+    <script>
+         window.onload = function () {
+            //Get the query string parameters from the URL
+             let urlParams = new URLSearchParams(window.location.search);
+            
+            // Create a map to store the values
+             let valuesMap = new Map();
+
+            // Iterate over the parameters and add them to the map
+             urlParams.forEach((value, key) => {
+                valuesMap.set(key, value);
+             });
+
+            // Display values on the page
+             displayValues(valuesMap);
+         };
+
+        function displayValues(valuesMap) {
+            let displayContainer = document.getElementById("displayValues");
+            displayContainer.innerHTML = "";
+
+            valuesMap.forEach((value, key) => {
+                let valueParagraph = document.createElement("p");
+                valueParagraph.textContent = `${key}: ${value}`;
+                displayContainer.appendChild(valueParagraph);
+            });
+        }
+    </script>
     
 
     </body>

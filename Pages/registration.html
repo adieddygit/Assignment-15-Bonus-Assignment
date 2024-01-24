@@ -7,7 +7,7 @@
     <meta name="descrition" content="Dynamic Web Development">
     <meta name="keywords" content="HTML 5, CSS3, JavaScript">
     <link rel="stylesheet" type="text/css" href="../CSS/personalinfo.css">
-    <title>Register Page</title>
+    <title>Registration Page</title>
 </head>
    
 <body>
@@ -38,7 +38,7 @@
 
     <article class="col-s-9">
        <div>
-        <form  method="post" action="localstorage.html" name="register" id=personalinfo onsubmit="return validateregister();" autocomplete="off">
+        <form method="get" action="localstorage.html" name="register" id=personalinfo onsubmit="return validateregister();" autocomplete="off">
                 <label for="firstname">
                     First Name:</label>
                 <input id="firstname" name="firstname" type="text"/><span id="firstnameErr"></span>&nbsp &nbsp
@@ -76,9 +76,34 @@
                 <input type="submit" onclick="collectAndDisplayValues();" value ="Submit">
         </form>
     </div>
+
     </article>
     
 </section>
+<script>
+    function collectAndDisplayValues() {
+        // Get form values
+        let firstname = document.getElementById("firstname").value;
+        let middlename = document.getElementById("middlename").value;
+        let lastname = document.getElementById("lastname").value;
+        let Unique_ID = document.getElementById("uniqueid").value;
+        let sex_1 = document.getElementById("sex_1").value;
+        let gi = document.getElementById("gi").value;
+        let sexorient = document.getElementById("sexorient").value;
+        let yob = document.getElementById("yob").value;
+
+        // Create a map with collected values
+        let valuesMap = new Map();
+        valuesMap.set("First Name", firstname);
+        valuesMap.set("Middle Name", middlename);
+        valuesMap.set("Last Name", lastname);
+        valuesMap.set("Unique_ID", uniqueid);
+        valuesMap.set("sex_1", sex_1);
+        valuesMap.set("Gender Identity", gi);
+        valuesMap.set("Sexual Orientation", sexorient);
+        valuesMap.set("Year of Birth", yob);
+    }
+</script>
 <script src="../Scripts/validateregister.js"></script>
 <script src="../Scripts/localstorage.js"></script>
 
